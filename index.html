@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Alan Germano</title>
+  <style>
+    :root {
+      --bg-color: #fdfdfd;
+      --text-color: #222;
+      --accent: #b5651d;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--accent);
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffebcd;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1.2rem;
+      margin: 1.5rem 0;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    /* Área do vídeo */
+    .video-container {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: 2rem auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      background: #000;
+    }
+    .video-container video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    /* Botão Flutuante WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 100;
+      transition: transform 0.3s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+    .whatsapp-float i {
+      margin-top: 15px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>Portfólio de Alan Germano</h1>
+    <nav>
+      <a href="#artista">O Artista</a>
+      <a href="#arte">A Arte</a>
+      <a href="#video">Vídeo</a>
+      <a href="#propostas">Propostas</a>
+      <a href="#condicoes">Condições</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="artista">
+    <h2>O Artista</h2>
+    <p>Alan Germano, artista plástico e tatuador, iniciou sua jornada artística aos 11 anos. Sua obra é marcada pela intensidade das cores e emoção transmitida em cada detalhe, transformando imagens em narrativas visuais únicas.</p>
+  </section>
+
+  <section id="arte">
+    <h2>A Arte</h2>
+    <div class="card">
+      <h3>Ellen</h3>
+      <p>Inspirada em um filme, representa força feminina contrastada com delicadeza.</p>
+    </div>
+    <div class="card">
+      <h3>Love</h3>
+      <p>Fundo em degradê que transmite emoções da calma à paixão.</p>
+    </div>
+    <div class="card">
+      <h3>Entardecer do Rio</h3>
+      <p>A beleza da cidade maravilhosa retratada em pintura.</p>
+    </div>
+    <div class="card">
+      <h3>Os Coqueiros</h3>
+      <p>Obra pintada aos 11 anos de idade.</p>
+    </div>
+  </section>
+
+  <!-- Seção do Vídeo -->
+  <section id="video">
+    <h2>Vídeo sobre o Trabalho</h2>
+    <div class="video-container">
+      <video controls>
+        <source src="assets/VID-20250827-WA0017.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+    </div>
+  </section>
+
+  <section id="propostas">
+    <h2>Propostas</h2>
+    <div class="card">
+      <h3>Pintura ao Vivo</h3>
+      <p>Pintura criada ao vivo na cerimônia. Entregue no mesmo dia.</p>
+      <strong>Investimento: R$ 1.400,00</strong>
+    </div>
+    <div class="card">
+      <h3>Pintura Realista Detalhada</h3>
+      <p>Registro ao vivo e finalização em até 7 dias em estilo realista.</p>
+      <strong>Investimento: R$ 2.000,00</strong>
+    </div>
+  </section>
+
+  <section id="condicoes">
+    <h2>Condições Gerais</h2>
+    <ul>
+      <li>Sinal mínimo de 30% do valor total.</li>
+      <li>Alterações de data com aviso prévio de 7 dias.</li>
+      <li>Parcelamento em até 12x com taxa proporcional.</li>
+      <li>Deslocamento incluso até 50 km do centro do Rio de Janeiro.</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Instagram: <a href="https://instagram.com/Lasan13art" target="_blank">@Lasan13art</a></p>
+    <p>Telefone: <a href="tel:+5521982798255">(21) 98279-8255</a></p>
+    <p><strong>Validade: fechando em 2025.</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Alan Germano - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://wa.me/5521982798255" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
