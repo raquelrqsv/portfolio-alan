@@ -1,112 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Alan Germano</title>
-  <style>
-    :root {
-      --bg-color: #fdfdfd;
-      --text-color: #222;
-      --accent: #b5651d;
-    }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--bg-color);
-      color: var(--text-color);
-      line-height: 1.6;
-    }
-    header {
-      background: var(--accent);
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #ffebcd;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: var(--accent);
-      margin-bottom: 1rem;
-    }
-    .card {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 1.2rem;
-      margin: 1.5rem 0;
-      background: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-    footer {
-      background: #222;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    /* Área do vídeo */
-    .video-container {
-      position: relative;
-      width: 100%;
-      max-width: 900px;
-      margin: 2rem auto;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      background: #000;
-    }
-    .video-container video {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    /* Botão Flutuante WhatsApp */
-    .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: #fff;
-      border-radius: 50%;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-      z-index: 100;
-      transition: transform 0.3s;
-    }
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-    }
-    .whatsapp-float i {
-      margin-top: 15px;
-    }
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+   <link rel="stylesheet" href="style.css">
+  
 </head>
-<body>
-  <header>
-    <h1>Portfólio de Alan Germano</h1>
-    <nav>
+
+<!-- Troque theme-gold por theme-silver para prateado -->
+<body class="theme-gold">
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <i class="fa-solid fa-rings-wedding"></i>
+      <span class="title">Portfólio de Alan Germano</span>
+      <i class="fa-solid fa-champagne-glasses"></i>
+    </div>
+    <p class="subtitle">Arte ao vivo para casamentos & eventos especiais</p>
+    <nav aria-label="Navegação principal">
       <a href="#artista">O Artista</a>
       <a href="#arte">A Arte</a>
       <a href="#video">Vídeo</a>
@@ -114,36 +30,47 @@
       <a href="#condicoes">Condições</a>
       <a href="#contato">Contato</a>
     </nav>
-  </header>
+  </div>
+</header>
+
+
+   
+
 
   <section id="artista">
-    <h2>O Artista</h2>
-    <p>Alan Germano, artista plástico e tatuador, iniciou sua jornada artística aos 11 anos. Sua obra é marcada pela intensidade das cores e emoção transmitida em cada detalhe, transformando imagens em narrativas visuais únicas.</p>
+    <h2><i class="fa-solid fa-user-tie" style="color:var(--accent);"></i> O Artista</h2>
+    <hr class="section-rule">
+    <p>
+      Alan Germano, artista plástico e tatuador, iniciou sua jornada aos 11 anos. Sua pintura ao vivo
+      traduz o clima do evento em composições elegantes, com apelo atemporal e acabamento museológico.
+    </p>
   </section>
 
   <section id="arte">
-    <h2>A Arte</h2>
+    <h2><i class="fa-solid fa-palette" style="color:var(--accent);"></i> A Arte</h2>
+    <hr class="section-rule">
+
     <div class="card">
-      <h3>Ellen</h3>
-      <p>Inspirada em um filme, representa força feminina contrastada com delicadeza.</p>
+      <h3 style="margin:0 0 4px 0; font-family:'Playfair Display', Georgia, serif;">Ellen</h3>
+      <p class="muted">Retrato com equilíbrio entre força e sutileza.</p>
     </div>
     <div class="card">
-      <h3>Love</h3>
-      <p>Fundo em degradê que transmite emoções da calma à paixão.</p>
+      <h3 style="margin:0 0 4px 0; font-family:'Playfair Display', Georgia, serif;">Love</h3>
+      <p class="muted">Degradês clássicos e cores sóbrias com profundidade.</p>
     </div>
     <div class="card">
-      <h3>Entardecer do Rio</h3>
-      <p>A beleza da cidade maravilhosa retratada em pintura.</p>
+      <h3 style="margin:0 0 4px 0; font-family:'Playfair Display', Georgia, serif;">Entardecer do Rio</h3>
+      <p class="muted">Luz dourada e horizonte icônico em composição equilibrada.</p>
     </div>
     <div class="card">
-      <h3>Os Coqueiros</h3>
-      <p>Obra pintada aos 11 anos de idade.</p>
+      <h3 style="margin:0 0 4px 0; font-family:'Playfair Display', Georgia, serif;">Os Coqueiros</h3>
+      <p class="muted">Primeira fase do artista, com linguagem já definida.</p>
     </div>
   </section>
 
-  <!-- Seção do Vídeo -->
   <section id="video">
-    <h2>Vídeo sobre o Trabalho</h2>
+    <h2><i class="fa-solid fa-video" style="color:var(--accent);"></i> Vídeo sobre o Trabalho</h2>
+    <hr class="section-rule">
     <div class="video-container">
       <video controls>
         <source src="assets/VID-20250827-WA0017.mp4" type="video/mp4">
@@ -152,48 +79,149 @@
     </div>
   </section>
 
-  <section id="propostas">
-    <h2>Propostas</h2>
-    <div class="card">
-      <h3>Pintura ao Vivo</h3>
-      <p>Pintura criada ao vivo na cerimônia. Entregue no mesmo dia.</p>
-      <strong>Investimento: R$ 1.400,00</strong>
-    </div>
-    <div class="card">
-      <h3>Pintura Realista Detalhada</h3>
-      <p>Registro ao vivo e finalização em até 7 dias em estilo realista.</p>
-      <strong>Investimento: R$ 2.000,00</strong>
-    </div>
-  </section>
+<!-- ===== Propostas (Acordeão) ===== -->
+<section id="propostas">
+  <h2><i class="fa-solid fa-scroll" style="color:var(--accent);"></i> Propostas</h2>
+  <hr class="section-rule">
 
+  <div class="accordion" role="tablist" aria-label="Propostas de Serviço">
+    <!-- Item 1 -->
+    <div class="accordion-item" data-accordion>
+      <button class="accordion-trigger" role="tab" aria-expanded="false">
+        <span class="trigger-left">
+          <span class="chev" aria-hidden="true">›</span>
+          Pintura ao Vivo (Cerimônia)
+        </span>
+      </button>
+      <div class="accordion-content" role="region" aria-hidden="true">
+          <p class="muted" style="margin:12px 0 10px;">
+            Pintura criada ao vivo durante a cerimônia. Entrega no mesmo dia, com acabamento elegante.
+          </p>
+          <p class="price" style="display:inline-block; margin: 6px 0 14px;">
+            Investimento: R$ 1.400,00
+          </p>
+          <ul class="pretty-list">
+            <li><i class="fa-regular fa-square-check"></i><span>Tela média (ex.: 50×70 cm)</span></li>
+            <li><i class="fa-regular fa-square-check"></i><span>Materiais e cavalete inclusos</span></li>
+            <li><i class="fa-regular fa-square-check"></i><span>Assinatura e certificado</span></li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="accordion-item" data-accordion>
+      <button class="accordion-trigger" role="tab" aria-expanded="false">
+        <span class="trigger-left">
+          <span class="chev" aria-hidden="true">›</span>
+          Pintura Realista Detalhada (Live + Finalização)
+        </span>
+      </button>
+      <div class="accordion-content" role="region" aria-hidden="true">
+          <p class="muted" style="margin:12px 0 10px;">
+            Registro ao vivo (esboço/base) e finalização em estúdio em até 7 dias, com detalhes finos e verniz.
+          </p>
+          <p class="price" style="display:inline-block; margin: 6px 0 14px;">
+            Investimento: R$ 2.000,00
+          </p>
+          <ul class="pretty-list">
+            <li><i class="fa-regular fa-square-check"></i><span>Tela premium (ex.: 60×80 cm)</span></li>
+            <li><i class="fa-regular fa-square-check"></i><span>Camadas adicionais e correções finas</span></li>
+            <li><i class="fa-regular fa-square-check"></i><span>Entrega com proteção museológica</span></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ===== Condições (Acordeão) ===== -->
   <section id="condicoes">
-    <h2>Condições Gerais</h2>
-    <ul>
-      <li>Sinal mínimo de 30% do valor total.</li>
-      <li>Alterações de data com aviso prévio de 7 dias.</li>
-      <li>Parcelamento em até 12x com taxa proporcional.</li>
-      <li>Deslocamento incluso até 50 km do centro do Rio de Janeiro.</li>
-    </ul>
+    <h2><i class="fa-solid fa-scale-balanced" style="color:var(--accent);"></i> Condições Gerais</h2>
+    <hr class="section-rule">
+
+    <div class="accordion" role="tablist" aria-label="Condições Gerais">
+      <div class="accordion-item" data-accordion>
+        <button class="accordion-trigger" role="tab" aria-expanded="false">
+          <span class="trigger-left"><span class="chev" aria-hidden="true">›</span> Sinal & Pagamento</span>
+        </button>
+        <div class="accordion-content" role="region" aria-hidden="true">
+          <ul class="pretty-list" style="margin-top:12px;">
+            <li><i class="fa-regular fa-credit-card"></i><span>Sinal mínimo de <strong>30%</strong> para reserva.</span></li>
+            <li><i class="fa-regular fa-credit-card"></i><span>Parcelamento em até <strong>12x</strong> com taxa proporcional.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-accordion>
+        <button class="accordion-trigger" role="tab" aria-expanded="false">
+          <span class="trigger-left"><span class="chev" aria-hidden="true">›</span> Alterações & Remarcações</span>
+        </button>
+        <div class="accordion-content" role="region" aria-hidden="true">
+          <ul class="pretty-list" style="margin-top:12px;">
+            <li><i class="fa-regular fa-calendar-check"></i><span>Alterações de data com aviso prévio de <strong>7 dias</strong>.</span></li>
+            <li><i class="fa-regular fa-file-lines"></i><span>Condições sujeitas a contrato simples de prestação de serviços.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item" data-accordion>
+        <button class="accordion-trigger" role="tab" aria-expanded="false">
+          <span class="trigger-left"><span class="chev" aria-hidden="true">›</span> Deslocamento</span>
+        </button>
+        <div class="accordion-content" role="region" aria-hidden="true">
+          <ul class="pretty-list" style="margin-top:12px;">
+            <li><i class="fa-regular fa-compass"></i><span>Deslocamento <strong>incluso</strong> até 50 km do Centro do Rio de Janeiro.</span></li>
+            <li><i class="fa-regular fa-compass"></i><span>Acima disso, considerar ajuda de custo previamente combinada.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="contato">
-    <h2>Contato</h2>
-    <p>Instagram: <a href="https://instagram.com/Lasan13art" target="_blank">@Lasan13art</a></p>
+    <h2><i class="fa-regular fa-envelope-open" style="color:var(--accent);"></i> Contato</h2>
+    <hr class="section-rule">
+    <p>Instagram: <a href="https://instagram.com/Lasan13art" target="_blank" rel="noopener">@Lasan13art</a></p>
     <p>Telefone: <a href="tel:+5521982798255">(21) 98279-8255</a></p>
-    <p><strong>Validade: fechando em 2025.</strong></p>
+    <p><strong>Validade:</strong> fechando em 2025.</p>
   </section>
 
   <footer>
-    <p>&copy; <span id="year"></span> Alan Germano - Todos os direitos reservados.</p>
+    <div class="credit">&copy; <span id="year"></span> Alan Germano — Todos os direitos reservados.</div>
   </footer>
 
-  <!-- Botão Flutuante WhatsApp -->
-  <a href="https://wa.me/5521982798255" class="whatsapp-float" target="_blank">
+  <!-- WhatsApp -->
+  <a href="https://wa.me/5521982798255" class="whatsapp-float" target="_blank" aria-label="Fale no WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
   <script>
+    // Ano dinâmico
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Acordeões com ARIA e setinha girando
+    document.querySelectorAll('[data-accordion]').forEach((item, idx) => {
+      const trigger = item.querySelector('.accordion-trigger');
+      const content = item.querySelector('.accordion-content');
+      trigger.setAttribute('id', `tab-${idx}`);
+      content.setAttribute('id', `panel-${idx}`);
+      trigger.setAttribute('aria-controls', content.id);
+      content.setAttribute('aria-labelledby', trigger.id);
+
+      trigger.addEventListener('click', () => {
+        const open = item.classList.contains('open');
+        // Fechar outros do mesmo grupo (comente estas 3 linhas para permitir múltiplos abertos)
+        item.parentElement.querySelectorAll('.accordion-item.open').forEach(i=>{
+          if(i!==item){ i.classList.remove('open'); i.querySelector('.accordion-trigger').setAttribute('aria-expanded','false'); i.querySelector('.accordion-content').setAttribute('aria-hidden','true'); }
+        });
+        item.classList.toggle('open', !open);
+        trigger.setAttribute('aria-expanded', String(!open));
+        content.setAttribute('aria-hidden', String(open));
+      });
+    });
+
+    // Exemplo: trocar para tema prateado via JS (opcional)
+    // document.body.classList.remove('theme-gold'); document.body.classList.add('theme-silver');
   </script>
 </body>
 </html>
